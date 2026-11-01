@@ -1,0 +1,19 @@
+# Installed inside the image with `npm ci`; the host copy is large and may
+# contain Windows-specific binaries.
+node_modules
+
+# Build output and caches: the image builds its own.
+dist
+.vite
+coverage
+
+# Not needed to build the app
+*.log
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+
+# The Docker files themselves
+Dockerfile
+.dockerignore

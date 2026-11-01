@@ -1,0 +1,21 @@
+# Local virtualenv: large and built for the host OS. The image builds its own.
+.venv
+venv
+
+# Caches and bytecode
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+.mypy_cache
+
+# Not part of the runtime image
+tests
+requirements-dev.txt
+*.log
+.vscode
+.idea
+
+# The Docker files themselves
+Dockerfile
+.dockerignore
